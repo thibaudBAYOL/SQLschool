@@ -1,0 +1,21 @@
+# Pris en main
+
+Ce logiciel ne fonctionne pas sans le dossier "resource", ce dossier doit se trouver dans le même répertoire que le .jar exécutable.
+Il ne faut rien modifier dans le dossier "resource".
+
+L'outil de génération des diagrammes ne fonctionne pas sans le dossier "graphs" et son contenu, 
+ce dossier doit se trouver dans le même répertoire que le .jar exécutable.
+
+# Utilisation
+
+Pour sélectionner un exercice, dans le menu a gauche, il faut développer le répertoire Films, puis il faut cliquer sur l'un des entrées questions qui se trouvent dans les sous-répertoires.
+
+Cliquer sur une question affichera les éléments suivants:
+- un bouton "Exécuter" pour soumettre les requêtes.
+- une zone de texte pour écrire la réponse.
+- une console pour l'affichage des résultats des requêtes.
+- l’énoncé de la question qui s'affichera au-dessus des éléments précédents.
+ 	
+Le but est de répondre a la question en écrivent UNE SEUL REQUÊTE dans la zone d’édition, puis en appuyant sur le bouton "Exécuter".
+
+Cliquer sur le nom de la base de données dans le menu à gauche affichera les tables et le schéma relationnel de cette dernière dans la moitié inférieure du programme.
