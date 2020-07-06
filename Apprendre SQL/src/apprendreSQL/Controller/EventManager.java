@@ -76,7 +76,7 @@ public class EventManager implements GetInformation {
 
 			} else {
 
-				output_answer = "Réponse correcte:";
+				output_answer = "RÃ©ponse correcte:";
 				compteurrep = 1;
 				System.out.println(query);
 				output_answer = output_answer + "<br>" + submit(query, selectedConnection);
@@ -96,11 +96,11 @@ public class EventManager implements GetInformation {
 
 			return corrector.definehint(answer);
 
-		return "Il faut d'abord essayer d'écrire une requête et de l'exécuter ;";
+		return "Il faut d'abord essayer d'Ã©crire une requÃªte et de l'exÃ©cuter ;";
 	}
 
 	/**
-	 * This method is called when the "Exécuter" button is clicked.
+	 * This method is called when the "ExÃ©cuter" button is clicked.
 	 */
 	public static void callExecute() {
 
@@ -111,8 +111,8 @@ public class EventManager implements GetInformation {
 		String text = ifCorrect(query);
 
 		if (compteurrep == 4) {
-			mainWindow.setOutPut("Vous avez fait 3 tentatives. Voilà la bonne réponse <br> " + answer
-					+ " <br> Essayez de l'écrire et de l'exécuter");
+			mainWindow.setOutPut("Vous avez fait 3 tentatives. VoilÃ  la bonne rÃ©ponse <br> " + answer.replaceAll("<","&lt;")
+					+ " <br> Essayez de l'Ã©crire et de l'exÃ©cuter");
 			compteurrep = 1;
 
 		} else {
@@ -174,7 +174,7 @@ public class EventManager implements GetInformation {
 	public static String submit(String inputQuery, ConnectionSQLite mySelectedConnection) {
 
 		if (mySelectedConnection == null)
-			return "ERR: Pas de base de données";
+			return "ERR: Pas de base de donnÃ©es";
 
 		if (checkQuery.ifSelectQuery(inputQuery)) {
 
